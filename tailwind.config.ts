@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import daisyui from "daisyui";
 
 const config: Config = {
   content: [
@@ -13,7 +14,20 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
     },
+    container: {
+      center: true,
+      padding : '1rem',
+      screens: { 
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+      }
+    }
   },
-  plugins: [],
+  plugins: [
+
+      daisyui,
+  ],
 };
 export default config;
